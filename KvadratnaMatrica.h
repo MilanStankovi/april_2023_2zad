@@ -12,7 +12,9 @@ public:
 	KvadratnaMatrica();
 	KvadratnaMatrica(int x);
 	~KvadratnaMatrica();
+	template<class T>
 	friend istream& operator>>(istream& ulaz, KvadratnaMatrica<T>& m);
+	template<class T>
 	friend ostream& operator<<(ostream& izlaz, KvadratnaMatrica<T>& m);
 	KvadratnaMatrica<T> operator+(KvadratnaMatrica<T>& m1);
 	KvadratnaMatrica<T> operator* (KvadratnaMatrica<T>& m1);
